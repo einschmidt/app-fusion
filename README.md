@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Fusion
+# Home Assistant App: Fusion
 
 A lightweight, self-hosted friendly RSS reader
 
