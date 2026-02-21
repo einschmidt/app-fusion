@@ -6,7 +6,7 @@ FROM $BUILD_FROM
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # https://github.com/0x2E/fusion/releases
-ARG FUSION_VERSION="0.9.8"
+ARG FUSION_VERSION="1.0.0"
 
 # Install lldap
 ARG BUILD_ARCH=amd64
@@ -16,7 +16,7 @@ RUN \
     && if [[ "$BUILD_ARCH" = "aarch64" ]]; then ARCH="arm64"; fi \
     && if [[ "$BUILD_ARCH" = "amd64" ]]; then ARCH="amd64"; fi \
     \
-    && curl -J -L -o /tmp/fusion.zip "https://github.com/0x2E/fusion/releases/download/v${FUSION_VERSION}/fusion_${FUSION_VERSION}_linux_${ARCH}.zip" \
+    && curl -J -L -o /tmp/fusion.zip "https://github.com/0x2E/fusion/releases/download/v${FUSION_VERSION}/fusion_linux_${ARCH}.zip" \
     && unzip /tmp/fusion.zip -d /usr/local/bin/ \
     \
     && chmod -R +x /usr/local/bin/fusion \
