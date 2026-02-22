@@ -20,12 +20,10 @@
       "customType": "regex",
       "managerFilePatterns": ["//Dockerfile$/"],
       "matchStrings": [
-        "ARG FUSION_VERSION=[\"']?(?<currentValue>v?[\\d.]+)[\"']?"
+        "ARG FUSION_VERSION=[\"']?(?<currentValue>v[\\d.]+)[\"']?"
       ],
       "datasourceTemplate": "github-releases",
-      "depNameTemplate": "0x2E/fusion",
-      "versioningTemplate": "semver",
-      "extractVersionTemplate": "v{{{version}}}"
+      "depNameTemplate": "0x2E/fusion"
     },
     {
       "customType": "regex",
