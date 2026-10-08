@@ -6,7 +6,7 @@ FROM $BUILD_FROM
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # https://github.com/0x2E/fusion/releases
-ARG FUSION_VERSION="v1.2.1"
+ARG FUSION_VERSION="v1.3.0"
 
 # Install lldap
 ARG BUILD_ARCH=amd64
